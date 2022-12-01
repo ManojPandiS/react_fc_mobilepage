@@ -46,6 +46,7 @@ export default function HomePage() {
     }
 
     function handlePageScroll( { target } ) {
+        
         if( hasOnGoingAPICall ) { return; }
         if ((target.clientHeight + target.scrollTop) > target.scrollHeight - 50 ) 
         {
